@@ -1,123 +1,89 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// void hello()
+// int fun(int a, int b)
 // {
-//     cout << "I m in function" << endl;
+//     return a + b;
 // }
 
-// swap
-// int swap(int *a, int *b)
+// int mul(int a, int b, int c)
+// {
+//     return (a * b * c) / 100;
+// }
+
+// void fun(int *a, int *b)
 // {
 //     int temp;
-
 //     temp = *a;
 //     *a = *b;
 //     *b = temp;
 
-//     return 0;
+//     cout << "Inside : " << endl;
+
+//     cout << *a << "  " << *b << endl;
 // }
 
 // int sum(int a, float b)
 // {
-//     cout << "Fun 1" << endl;
+//     cout << "fun 1" << endl;
 //     return a + b;
 // }
 
-// int sum(float a, int b)
+// int sum(int a, int b)
 // {
-//     cout << "Fun 2" << endl;
+//     cout << "fun 2" << endl;
 //     return a + b;
 // }
 
-// int sum(int a, int b, int c)
-// {
-//     cout << "Fun 3" << endl;
-//     return a * b * c;
-// }
+// primeter - circle, rectangle , triangle
 
-// bool evenodd(int a)
-// {
-//     bool res = a % 2;
-
-//     return res;
-// }
-
-// bool isPrime(int a)
-// {
-//     for (int i = 2; i < a; i++)
-//         if (a % i == 0)
-//             return false;
-
-//     return true;
-// }
-
-// primeter
-// circle - r
-// triangle - s1, s2, s3
-// rectange - l,b
-
-// float circle(int r)
+// double peri(int r)
 // {
 //     return 2 * 3.14 * r;
 // }
 
-// int triangle(int s1, int s2, int s3)
-// {
-//     return s1 + s2 + s3;
-// }
-
-// int rectangle(int l, int b)
+// double peri(int l, int b)
 // {
 //     return 2 * (l + b);
 // }
 
-double primeter(int r)
-{
-    return 2 * 3.14 * r;
-}
+// double peri(int s1, int s2, int s3)
+// {
+//     return s1 + s2 + s3;
+// }
 
-double primeter(int s1, int s2, int s3)
+bool isEven(int a)
 {
-    return s1 + s2 + s3;
+    return !(a % 2);
 }
-
-double primeter(int l, int b)
-{
-    return 2 * (l + b);
-} 
 
 int main()
 {
-    // hello();
-    int a1 = 10, a2 = 14;
 
-    // cin >> a1;
-    // cin >> a2;
+    // fun(10, 'U');
+    // int x, y, z;
+    // cin >> x >> y >> z;
+    // int a = mul(x, y, z);
+    // cout << a << endl;
+    // cout << fun();
+    // int ab = 10;
+    // int b = fun(ab);
+    // cout << ab << endl;
+    // cout << b << endl;
+    // int a = 10, b = 20;
+    // fun(&a, &b);
+    // cout << "Outside" << endl;
+    // cout << a << "  " << b;
 
-    // cout << a1 << "  " << a2 << endl;
+    // int a = 10;
+    // float b = 100.6;
+    // double per = peri(5,6,7);
 
-    // int a = swap(&a1, &a2);
-    // int a = 10.6;
-    // float b = 17.6;
+    // cout << per;
 
-    // int res = sum(b, a);
+    bool a = isEven(11);
 
-    // cout << a1 << "  " << a2 << endl;
-    // cout << res;
-
-    int a = 0;
-
-    cin >> a;
-
-    // bool re = isPrime(a);
-
-    // // if (re)
-    // //     cout << "Odd";
-    // // else
-    // //     cout << "even";
-
-    // cout << (re ? "Prime" : "Not");
+    cout << a;
 
     return 0;
 }
